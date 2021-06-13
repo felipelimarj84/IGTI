@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/index.css" />
+		<title>Cálculo Velocidade Média</title>
+	</head>
+	<body>
+		<div class="container">
+			<h4>Desenvolvido por: Felipe Augusto de Almeida Lima</h4>
+			<h2>Cálculo Velocidade Média</h2>
+			<img src="./img/formula-da-velocidade.jpg" />
+
+			<form id="formCalc">
+				<div class="field">
+					<label>Distância (Km)</label>
+					<input
+						type="number"
+						id="inputDistancia"
+						class="input-padrao"
+						placeholder="Distância"
+					/>
+				</div>
+				<div class="field">
+					<label>Tempo (minutos)</label>
+					<input type="number" id="inputTempo" class="input-padrao" placeholder="Tempo" />
+				</div>
+				<div class="field">
+					<input type="submit" value="Calcular" class="btnAcao" id="btnCalcular" />
+					<input type="submit" value="Limpar" class="btnAcao" id="btnLimpar" />
+				</div>
+			</form>
+
+			<div class="none" id="divResultado">
+				<h3>VELOCIDADE MÉDIA</h3>
+				<span id="spanResultado">
+			</div>
+			<div class="none" id="divError">
+				<h3>Dados incorretos. Informe todos os valores.</h3>
+			</div>
+		</div>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
